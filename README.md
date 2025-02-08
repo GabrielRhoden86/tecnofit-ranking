@@ -116,8 +116,7 @@ Insira o token de autenticação no cabeçalho `Authorization` da requisição.<
 </table>
 
 ## 🎯 Considerações 
-- Obs enviar o **token** no cabeçalho `Authorization` para acessar as rotas.
-- Utilize `Bearer <seu_token_aqui>` como formato do token.
 - A API segue os padrões REST.
+- A API utiliza o padrão de autenticação Sanctum.
 
 
