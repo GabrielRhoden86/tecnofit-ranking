@@ -122,7 +122,7 @@ Insira o token de autenticação no cabeçalho `Authorization` da requisição.<
 - **Back Squat**\
   `GET http://localhost:8000/api/ranking/2`
 
-- **Outro Ranking**\
+- **Bench Press**\
   `GET http://localhost:8000/api/ranking/3`
 
 ### **4️⃣ Fazer Logout**
