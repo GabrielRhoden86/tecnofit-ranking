@@ -20,8 +20,7 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-
-        return response()->json(['user' => $user, 'token' => $user->createToken('api-token')->plainTextToken]);
+        return response()->json(['user' => $user]);
     }
 
     public function login(Request $request)
@@ -37,7 +36,10 @@ class AuthController extends Controller
         if (!Hash::check($request->password, $user->password)) {
             return response()->json(['message' => 'Senha incorreta.'], 401);
         }
-        return response()->json(['token' => $user->createToken('api-token')->plainTextToken]);
+        return response()->json([
+            'message' => 'Login realizado com sucesso',
+            'token' => $user->createToken('api-token')->plainTextToken
+        ]);
     }
 
 

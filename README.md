@@ -48,7 +48,7 @@ Esta API utiliza o **Laravel Sanctum** para autenticação baseada em tokens.
 
 ## 🛠 Testando a API
 
-Use o **Postman** ou qualquer cliente HTTP para testar as rotas.
+Use o **Insomnia** ou qualquer cliente HTTP para testar as rotas.
 
 ### **1️⃣ Registrar um Usuário**
 
@@ -89,7 +89,7 @@ Insira o token de autenticação no cabeçalho `Authorization` da requisição.<
   </tr>
   <tr>
     <td>Authorization</td>
-    <td>Bearer 1| &lt;seu_token_aqui&gt;</td>
+    <td>Bearer &lt;seu_token_aqui&gt;</td>
   </tr>
 </table>
 
