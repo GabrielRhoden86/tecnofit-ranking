@@ -1,14 +1,12 @@
 <?php
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class RankingController extends Controller
 {
     public function getRanking($movementId)
     {
-        $movement = DB::table('movements')->where('id', operator: $movementId)->first();
+        $movement = DB::table('movements')->where('id', $movementId)->first();
         if (!$movement) {
             return response()->json(['error' => 'Movimento não existe!'], 404);
         }
@@ -19,16 +17,19 @@ class RankingController extends Controller
             ->where('personal_records.movement_id', $movementId)
             ->orderBy('personal_records.value', 'desc')
             ->get();
-
-        $position = 1;
-        $previousValue = null;
-        foreach ($ranking as $record) {
-            if ($previousValue !== null && $record->value < $previousValue) {
-                $position++;
+            $position = 1;
+            $previousValue = 0;
+            $previousPosition = 1;
+            foreach ($ranking as $index => $personalRecords ) {
+                if ($personalRecords->value < $previousValue) {
+                    $position = $index + 1;
+                } else {
+                    $position = $previousPosition;
+                }
+                $personalRecords->position = $position;
+                $previousValue = $personalRecords->value;
+                $previousPosition = $position;
             }
-            $record->position = $position;
-            $previousValue = $record->value;
-        }
 
         return response()->json([
             'movement' => $movement->name,

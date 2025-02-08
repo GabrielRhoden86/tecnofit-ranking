@@ -9,20 +9,19 @@ return [
 'guards' => [
     'web' => [
         'driver' => 'session',
-        'provider' => 'users',
+        'provider' => 'userlogins', // Referência ao provedor 'userlogins'
     ],
 
     'api' => [
         'driver' => 'sanctum',
-        'provider' => 'users',
+        'provider' => 'userlogins', // Referência ao provedor 'userlogins'
     ],
 ],
 
 'providers' => [
-    'users' => [
+    'userlogins' => [ // Nome do provedor é 'userlogins'
         'driver' => 'eloquent',
-        'model' => App\Models\UserLogin::class,
-        'table' => 'user_login', 
+        'model' => App\Models\UserLogin::class, // Aqui está o caminho correto do modelo UserLogin
     ],
 ],
 

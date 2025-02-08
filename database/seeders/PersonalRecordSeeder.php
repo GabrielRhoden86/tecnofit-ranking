@@ -24,8 +24,17 @@ class PersonalRecordSeeder extends Seeder
             ['id' => 13, 'user_id' => 3, 'movement_id' => 2, 'value' => 125.0, 'date' => '2021-01-03 00:00:00.0'],
             ['id' => 14, 'user_id' => 1, 'movement_id' => 2, 'value' => 110.0, 'date' => '2021-01-05 00:00:00.0'],
             ['id' => 15, 'user_id' => 1, 'movement_id' => 2, 'value' => 100.0, 'date' => '2021-01-01 00:00:00.0'],
-            ['id' => 16, 'user_id' => 2, 'movement_id' => 2, 'value' => 120.0, 'date' => '2021-01-01 00:00:00.0'],
-            ['id' => 17, 'user_id' => 3, 'movement_id' => 2, 'value' => 120.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 16, 'user_id' => 2, 'movement_id' => 2, 'value' => 120.0, 'date' => '2021-01-02 00:00:00.0'],
+            ['id' => 17, 'user_id' => 3, 'movement_id' => 2, 'value' => 120.0, 'date' => '2021-01-02 00:00:00.0'],
+            ['id' => 18, 'user_id' => 3, 'movement_id' => 3, 'value' => 140.0, 'date' => '2021-01-02 00:00:00.0'],
+            ['id' => 19, 'user_id' => 1, 'movement_id' => 3, 'value' => 150.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 20, 'user_id' => 2, 'movement_id' => 3, 'value' => 145.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 21, 'user_id' => 2, 'movement_id' => 3, 'value' => 150.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 21, 'user_id' => 3, 'movement_id' => 3, 'value' => 155.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 22, 'user_id' => 3, 'movement_id' => 3, 'value' => 140.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 23, 'user_id' => 1, 'movement_id' => 3, 'value' => 135.0, 'date' => '2021-01-01 00:00:00.0'],
+
+
         ]);
     }
 }

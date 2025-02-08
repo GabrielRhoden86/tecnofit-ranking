@@ -107,10 +107,15 @@ Insira o token de autenticação no cabeçalho `Authorization` da requisição.<
 
 - **Método:** `POST`
 - **URL:** `http://localhost:8000/api/logout`
-- **Obs:** PARA logout utilize o mesmo token  utilizado no login (Bearer 1| <token>)
+- **Obs:** Para realizar o logout utilize o mesmo token  utilizado no login:
+<table>
+  <tr>
+    <td><strong>Execute o comando:</strong></td>
+    <td><code>curl -X POST http://localhost:8000/api/logout -H "Authorization: Bearer &lt;token_login_aqui&gt;"</code></td>
+  </tr>
+</table>
 
 ## 🎯 Considerações 
-
 - Obs enviar o **token** no cabeçalho `Authorization` para acessar as rotas.
 - Utilize `Bearer <seu_token_aqui>` como formato do token.
 - A API segue os padrões REST.
