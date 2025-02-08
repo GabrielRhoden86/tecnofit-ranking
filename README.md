@@ -81,10 +81,18 @@ Use o **Postman** ou qualquer cliente HTTP para testar as rotas.
 Acessível apenas para usuários autenticados.
 
 Insira o token de autenticação no cabeçalho `Authorization` da requisição.<br>
-- **Método:** `GET`<br>
-| Key           | Value                      |
-|--------------|----------------------------|
-| Authorization | Bearer 1| <seu_token_aqui> |
+
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Authorization</td>
+    <td>Bearer 1| &lt;seu_token_aqui&gt;</td>
+  </tr>
+</table>
+
 
 - **Deadlift**\
   `GET http://localhost:8000/api/ranking/1`
