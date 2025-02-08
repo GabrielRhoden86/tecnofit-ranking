@@ -110,8 +110,8 @@ Insira o token de autenticação no cabeçalho `Authorization` da requisição.<
 - **Obs:** Para realizar o logout utilize o mesmo token  utilizado no login:
 <table>
   <tr>
-    <td><strong>Execute o comando:</strong></td>
-    <td><code>curl -X POST http://localhost:8000/api/logout -H "Authorization: Bearer &lt;token_login_aqui&gt;"</code></td>
+    <td><strong>Baerer</strong></td>
+    <td><code>&lt;token_login_aqui&gt;"</code></td>
   </tr>
 </table>
 
