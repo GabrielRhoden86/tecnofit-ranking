@@ -4,19 +4,30 @@
 
 ## 🚀 Configuração do Ambiente
 
-### **1️⃣ Instalar Dependências**
+### **1️⃣ Clonar projeto**
+```sh
+git clone https://github.com/GabrielRhoden86/tecnofit-ranking.git
+```
+
+### **2️⃣ Instalar Dependências**
 
 ```sh
 composer install
 ```
+### **3️⃣ Gerar Chave da Aplicação**
 
-### **2️⃣ Gerar Chave da Aplicação**
+```sh
+windows:copy .env.example .env
+linux:cp .env.example .env
+```
+
+### **4️⃣ Gerar Chave da Aplicação**
 
 ```sh
 php artisan key:generate
 ```
 
-### **3️⃣ Iniciar o Servidor**
+### **5️⃣ Iniciar o Servidor**
 
 ```sh
 php artisan serve
@@ -30,13 +41,24 @@ php artisan serve
 CREATE DATABASE ranking_db;
 ```
 
-### **2️⃣ Executar as Migrações**
+### **2️⃣ Credenciais do Banco de Dados**
+
+```sh
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=ranking_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### **3️⃣ Executar as Migrações**
 
 ```sh
 php artisan migrate
 ```
 
-### **3️⃣ Popular o Banco com Dados Iniciais**
+### **4️⃣ Popular o Banco com Dados Iniciais**
 
 ```sh
 php artisan db:seed

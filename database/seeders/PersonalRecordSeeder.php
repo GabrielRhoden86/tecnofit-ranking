@@ -30,9 +30,9 @@ class PersonalRecordSeeder extends Seeder
             ['id' => 19, 'user_id' => 1, 'movement_id' => 3, 'value' => 150.0, 'date' => '2021-01-01 00:00:00.0'],
             ['id' => 20, 'user_id' => 2, 'movement_id' => 3, 'value' => 145.0, 'date' => '2021-01-01 00:00:00.0'],
             ['id' => 21, 'user_id' => 2, 'movement_id' => 3, 'value' => 150.0, 'date' => '2021-01-01 00:00:00.0'],
-            ['id' => 21, 'user_id' => 3, 'movement_id' => 3, 'value' => 155.0, 'date' => '2021-01-01 00:00:00.0'],
-            ['id' => 22, 'user_id' => 3, 'movement_id' => 3, 'value' => 140.0, 'date' => '2021-01-01 00:00:00.0'],
-            ['id' => 23, 'user_id' => 1, 'movement_id' => 3, 'value' => 135.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 22, 'user_id' => 3, 'movement_id' => 3, 'value' => 155.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 23, 'user_id' => 3, 'movement_id' => 3, 'value' => 140.0, 'date' => '2021-01-01 00:00:00.0'],
+            ['id' => 24, 'user_id' => 1, 'movement_id' => 3, 'value' => 135.0, 'date' => '2021-01-01 00:00:00.0'],
 
 
         ]);

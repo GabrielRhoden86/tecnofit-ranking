@@ -19,12 +19,12 @@ class Handler extends ExceptionHandler
         'password_confirmation',
     ];
 
-    // protected function unauthenticated($request, AuthenticationException $exception): JsonResponse
-    // {
-    //     return response()->json([
-    //         'message' => 'Você precisa estar autenticado para acessar esta rota.'
-    //     ], 401);
-    // }
+    protected function unauthenticated($request, AuthenticationException $exception): JsonResponse
+    {
+        return response()->json([
+            'message' => 'É necessário autenticar-se via token para acessar esta rota!'
+        ], 401);
+    }
 
     public function register(): void
     {
