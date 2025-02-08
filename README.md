@@ -82,8 +82,9 @@ Acessível apenas para usuários autenticados.
 
 Insira o token de autenticação no cabeçalho `Authorization` da requisição.<br>
 - **Método:** `GET`<br>
-Key              Value<br>
-`Authorization`  `Bearer <seu_token_aqui>`
+| Key           | Value                      |
+|--------------|----------------------------|
+| Authorization | Bearer 1| <seu_token_aqui> |
 
 - **Deadlift**\
   `GET http://localhost:8000/api/ranking/1`
