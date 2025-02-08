@@ -52,7 +52,6 @@ class AuthController extends Controller
             $user->tokens()->delete();
             return response()->json(['message' => 'Logout realizado com sucesso'], 200);
         }
-
         return response()->json(['error' => 'Usuário não autenticado'], 401);
     }
 }

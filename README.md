@@ -1,6 +1,6 @@
 # API Ranking Tecnofit
 
-Bem-vindo ao **API Ranking Tecnofit**, um sistema de ranking para levantamento de peso com autenticação baseada em tokens utilizando Laravel Sanctum.
+**API Ranking Tecnofit** é um sistema de ranking de atividades fisicas.
 
 ## 🚀 Configuração do Ambiente
 
@@ -80,10 +80,10 @@ Use o **Postman** ou qualquer cliente HTTP para testar as rotas.
 
 Acessível apenas para usuários autenticados.
 
-Insira o token de autenticação no cabeçalho `Authorization` da requisição.
-- **Método:** `GET`
-Key             Value
-Authorization   Bearer 1|L8dU6XU68gygB9ViH1nRtUnMJFoqvrjkrHe62m98b94378fe
+Insira o token de autenticação no cabeçalho `Authorization` da requisição.<br>
+- **Método:** `GET`<br>
+Key              Value<br>
+`Authorization`  `Bearer <seu_token_aqui>`
 
 - **Deadlift**\
   `GET http://localhost:8000/api/ranking/1`
@@ -98,11 +98,12 @@ Authorization   Bearer 1|L8dU6XU68gygB9ViH1nRtUnMJFoqvrjkrHe62m98b94378fe
 
 - **Método:** `POST`
 - **URL:** `http://localhost:8000/api/logout`
+- **Obs:** PARA logout utilize o mesmo token  utilizado no login (Bearer 1| <token>)
 
-## 🎯 Considerações Finais
+## 🎯 Considerações 
 
-- Certifique-se de enviar o **token** no cabeçalho `Authorization` para acessar rotas protegidas.
+- Obs enviar o **token** no cabeçalho `Authorization` para acessar as rotas.
 - Utilize `Bearer <seu_token_aqui>` como formato do token.
-- A API segue os padrões REST para comunicação.
+- A API segue os padrões REST.
 
 

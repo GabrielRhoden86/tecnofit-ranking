@@ -22,6 +22,7 @@ return [
     'users' => [
         'driver' => 'eloquent',
         'model' => App\Models\UserLogin::class,
+        'table' => 'user_login', 
     ],
 ],
 
